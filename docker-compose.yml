@@ -1,0 +1,7 @@
+services:
+  fish-ai:
+    build: .
+    container_name: fish_ai_backend
+    ports:
+      - "8000:8000"
+    restart: always
