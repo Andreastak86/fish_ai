@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import joblib

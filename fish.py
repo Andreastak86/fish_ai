@@ -15,17 +15,40 @@ dato_liste = start_dato + pd.to_timedelta(tilfeldige_dager, unit="D")
 data = {
     "dato_fangst": dato_liste,
     "fisk_type": np.random.choice(
-        ["Torsk", "Sei", "Laks", "Makrell", "Kveite", "Lyr", "Brosme", "Breiflabb"],
+        [
+            "Torsk",
+            "Sei",
+            "Laks",
+            "Makrell",
+            "Kveite",
+            "Lyr",
+            "Brosme",
+            "Breiflabb",
+            "Pale",
+            "Flyndre",
+            "Uer",
+        ],
         n_rader,
     ),
-    "dyp_fanget_meter": np.random.randint(5, 180, n_rader),
+    "dyp_fanget_meter": np.random.randint(5, 250, n_rader),
     "sluk_type": np.random.choice(
-        ["Møresilda", "Stingsild", "Sluk", "Flue", "Jigg", "Rema-sluk", "Fireball"],
+        [
+            "Møresilda",
+            "Stingsild",
+            "Sluk",
+            "Flue",
+            "Jigg",
+            "Rema-sluk",
+            "Fireball",
+            "Wobbler",
+            "Spinner",
+        ],
         n_rader,
     ),
-    "vekt_kg": np.random.uniform(1.2, 24.0, n_rader).round(1),
+    "vekt_kg": np.random.uniform(0.5, 30.0, n_rader).round(1),
     "omraade": np.random.choice(
-        ["Lysefjorden", "Blia", "Krokeide", "Austevoll", "Frekhaug"], n_rader
+        ["Lysefjorden", "Blia", "Krokeide", "Austevoll", "Frekhaug", "Sotra", "Askøy"],
+        n_rader,
     ),
 }
 
