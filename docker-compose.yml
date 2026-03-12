@@ -3,5 +3,5 @@ services:
     build: .
     container_name: fish_ai_backend
     ports:
-      - "8000:8000"
+      - "8080:8000"
     restart: always
